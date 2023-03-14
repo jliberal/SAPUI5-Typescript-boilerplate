@@ -1,0 +1,80 @@
+{
+    "_version": "1.12.0",
+    "sap.app": {
+        "id": "cl.aquas.developments.templates.zui5tsboiler",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "sourceTemplate": {
+            "id": "@sap/ux-app-migrator:freestyle",
+            "version": "1.9.1",
+            "toolsId": "d3d7e143-74d8-442c-bffa-7a93c04149ae"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {},
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "cl.aquas.developments.templates.zui5tsboiler.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "app"
+        },
+        "dependencies": {
+            "minUI5Version": "1.96.10",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.ui.layout": {},
+                "sap.ui.unified": {},
+                "sap.m": {}
+            }
+        },
+        "handleValidation": true,
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "cl.aquas.developments.templates.zui5tsboiler.i18n.i18n"
+                }
+            }
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "cl.aquas.developments.templates.zui5tsboiler.view",
+                "controlId": "app",
+                "controlAggregation": "pages",
+                "async": true
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "main",
+                    "target": "main"
+                }
+            ],
+            "targets": {
+                "main": {
+                    "viewId": "main",
+                    "viewName": "Main"
+                }
+            }
+        }
+    }
+}

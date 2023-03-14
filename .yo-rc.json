@@ -1,0 +1,15 @@
+{
+  "generator-ui5-ts-app": {
+    "application": "zui5tsboiler",
+    "namespace": "cl.aquas.developments.templates",
+    "framework": "SAPUI5",
+    "frameworkVersion": "1.96.10",
+    "author": "John Paul Liberal",
+    "initrepo": true,
+    "tstypes": "@sapui5/ts-types-esm",
+    "tstypesVersion": "1.96.10",
+    "appId": "cl.aquas.developments.templates.zui5tsboiler",
+    "appURI": "cl/aquas/developments/templates/zui5tsboiler",
+    "setupCompleted": true
+  }
+}

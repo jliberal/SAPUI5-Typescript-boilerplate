@@ -1,0 +1,16 @@
+specVersion: "2.6"
+metadata:
+  name: cl.aquas.developments.templates.zui5tsboiler
+type: application
+resources:
+  configuration:
+    paths:
+      webapp: dist
+framework:
+  name: SAPUI5
+  version: "1.96.10"
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.ui.unified
+    - name: themelib_sap_horizon
